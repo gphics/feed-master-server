@@ -33,9 +33,7 @@ app.use(express.urlencoded({ extended: true }));
 app.enable("trust proxy");
 app.use(
   cors({
-    origin:
-      "https://feed-master-client-3r691e1v2-abdulbasits-projects-05fea404.vercel.app/",
-    credentials: true,
+    origin: "*",
   })
 );
 // routes
